@@ -55,9 +55,9 @@ if (isset($_GET['mark_done']) && isset($_SESSION['todos'][$_GET['mark_done']])) 
                         <tr>
                             <th>No</th>
                             <th>Nama Tugas</th>
-                            <th>Tanggal Mulai</th>
                             <th>Tingkat Prioritas</th>
                             <th>Keterangan</th>
+                            <th>Tanggal Mulai</th>
                             <th>Tanggal Deadline</th>
                             <th>Status</th>
                             <th></th>
@@ -75,10 +75,10 @@ if (isset($_GET['mark_done']) && isset($_SESSION['todos'][$_GET['mark_done']])) 
                                     <td><?php echo htmlspecialchars($todo['deadline_date']); ?></td>
                                     <td><?php echo htmlspecialchars($todo['status']); ?></td>
                                     <td>
-                                        <a href="ubah.php?index=<?php echo $index; ?>" class="btn btn-warning btn-sm">Edit</a> <!-- Tombol untuk mengedit tugas -->
-                                        <a href="hapus.php?index=<?php echo $index; ?>" class="btn btn-danger btn-sm">Hapus</a> <!-- Tombol untuk menghapus tugas -->
+                                        <a href="edit.php?index=<?php echo $index; ?>" class="btn btn-warning btn-sm">Edit</a> <!-- Tombol untuk mengedit tugas -->
+                                        <a href="delete.php?index=<?php echo $index; ?>" class="btn btn-danger btn-sm">Delete</a> <!-- Tombol untuk menghapus tugas -->
                                         <?php if ($todo['status'] === 'Belum Dikerjakan'): ?>
-                                            <a href="?mark_done=<?php echo $index; ?>" class="btn btn-success btn-sm">Tandai Selesai</a> <!-- Tombol untuk menandai tugas sebagai selesai -->
+                                            <a href="?mark_done=<?php echo $index; ?>" class="btn btn-success btn-sm">Done</a> <!-- Tombol untuk menandai tugas sebagai selesai -->
                                         <?php endif; ?>
                                     </td>
                                 </tr>
