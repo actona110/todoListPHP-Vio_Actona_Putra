@@ -1,3 +1,11 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.btn-utama {
+  @apply bg-hijau text-base font-semibold py-3 px-4 text-white no-underline rounded-xl hover:opacity-80 hover:shadow-lg;
+}
+
+.btn-kedua {
+  @apply bg-red-500 text-base font-semibold py-3 px-4 text-white no-underline rounded-xl hover:opacity-80 hover:shadow-lg;
+}

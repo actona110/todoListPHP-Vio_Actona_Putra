@@ -28,7 +28,7 @@ if (isset($_GET['mark_done']) && isset($_SESSION['todos'][$_GET['mark_done']])) 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aplikasi To-Do List</title>
-    <link rel="stylesheet" href="/dist/css/style.css">
+    <link rel="stylesheet" href="/dist/css/index.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body class="bg-slate-300">
@@ -44,7 +44,7 @@ if (isset($_GET['mark_done']) && isset($_SESSION['todos'][$_GET['mark_done']])) 
         <?php endif; ?>
 
         <div class="mb-10">
-            <a href="tambah.php" class="bg-hijau text-base font-semibold py-3 px-6 text-white no-underline rounded-full hover:opacity-80 hover:shadow-lg">Tambah Tugas</a> <!-- Tombol untuk menambah tugas -->
+            <a href="add.php" class="btn-utama">Tambah Tugas</a> <!-- Tombol untuk menambah tugas -->
         </div>
         
         <div class="card">
