@@ -2,7 +2,11 @@
 module.exports = {
   content: ["./dist/**/*.{html,js,php}"],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        hijau: "#04AA6D",
+      },
+    },
   },
   plugins: [],
 };
